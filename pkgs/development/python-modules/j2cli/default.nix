@@ -9,12 +9,12 @@
 
 buildPythonPackage rec {
   pname = "j2cli";
-  version = "0.3.5.post1";
+  version = "0.3.6.post1";
   disabled = isPy3k;
 
   src = fetchPypi {
     inherit pname version;
-    sha256 = "c0439a79308aae320bfd01d82b56893b02fe461195d8b69b438ba9b333075642";
+    sha256 = "224224a133b27f96ea8da2ad6e5db227a59803195f7245c50a04f07256021ac9";
   };
 
   buildInputs = [ nose ];
