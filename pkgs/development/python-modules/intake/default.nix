@@ -21,12 +21,12 @@
 
 buildPythonPackage rec {
   pname = "intake";
-  version = "0.4.1";
+  version = "0.4.3";
   disabled = isPy27;
 
   src = fetchPypi {
     inherit pname version;
-    sha256 = "f47e53aa764eeadf6adcc667b9817b1ad32496477476da0b982d4fc0744b40ef";
+    sha256 = "80862f41d5410a4237f9b2138cacc62240f75f925a233f986c1df10a541c6f99";
   };
 
   checkInputs = [ pytest ];
