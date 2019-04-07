@@ -5,12 +5,12 @@
 }:
 
 buildPythonPackage rec {
-  version = "1.6.0";
+  version = "1.6.1";
   pname = "gsd";
 
   src = fetchPypi {
     inherit pname version;
-    sha256 = "845a7fe4fd9776cda1bd66112dc2d788cb5ccf8333a205bd4a32807e57d3c875";
+    sha256 = "4124b1433d552037a9cf8fd769be5d3584ce7e875cea4d3ab48f60bd58e12ca2";
   };
 
   propagatedBuildInputs = [ numpy ];
